@@ -1,5 +1,5 @@
 const ParsePdf = require('./NativeParsePdf').default;
 
-export function multiply(a: number, b: number): number {
-  return ParsePdf.multiply(a, b);
+export async function extractTextFromPdf(filePath: string): Promise<string> {
+  return ParsePdf.extractTextFromPdf(filePath);
 }
